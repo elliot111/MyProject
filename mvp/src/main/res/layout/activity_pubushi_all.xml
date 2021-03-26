@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PubushiAllActivity">
+
+    <TextView
+        android:id="@+id/btn_StaggeredGridLayoutManager"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="StaggeredGridLayoutManager"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:id="@+id/btn_GridLayoutManager"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_StaggeredGridLayoutManager"
+        android:layout_marginTop="10dp"
+        android:text="GridLayoutManager"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:id="@+id/btn_FlexboxLayoutManager"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_GridLayoutManager"
+        android:layout_marginTop="10dp"
+        android:text="FlexboxLayoutManager"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:background="#ffffff"/>
+
+
+    <!--ChipGroup 默认状态，会换行，可多选-->
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_FlexboxLayoutManager"
+        android:layout_marginTop="10dp"
+        app:chipSpacing="25dp"
+        app:chipSpacingHorizontal="35dp"
+        app:chipSpacingVertical="10dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipInGroup1"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chipInGroup1"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipInGroup2"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chipInGroup2"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipInGroup3"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chipInGroup3"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
